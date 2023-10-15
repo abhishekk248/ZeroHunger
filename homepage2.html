@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NourishNet</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="./myscript.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/Free_Sample_By_Wix.jpg" type="image/png" />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  </head>
+  <body>
+    <script>
+      document
+        .getElementsByClassName("toggle-button")[0]
+        .addEventListener("click", function () {
+          document.querySelectorAll("ul")[0].classList.toggle("active");
+          document.getElementById("bars").classList.toggle("hide");
+          document.getElementById("cross").classList.toggle("hide");
+        });
+    </script>
+    <header id="header">
+      <nav>
+        <div class="left-nav">
+          <img src="images/Free_Sample_By_Wix.jpg" class="arrow" />
+          <span class="primary-color">Nourish</span>Net
+        </div>
+        <div class="right-nav">
+          <button class="toggle-button">
+            <img src="./images/bars.png" id="bars" />
+            <img src="/images/cross.png" class="hide" id="cross" />
+          </button>
+          <ul>
+            <!-- <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li> -->
+            <li><a href="#k">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="">Stores</a></li>
+            <li>abhishekkavu</li>
+            <li><img src="images/d.png" class="arrow" /></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="first" id="k">
+        <div class="leftSection">
+          <div id="name">
+            <div><a href="form.html"><span class="primary-color">Get</span>Supplies</a></div>
+            <span id="element"></span>
+            <script>
+              var typed = new Typed("#element", {
+                strings: [
+                  "Want delivery fast, order now"
+                ],
+                shuffle: true,
+                typeSpeed: 50,
+                loop: true,
+                loopCount: Infinity,
+              });
+            </script>
+          </div>
+        </div>
+        <div class="rightSection">
+          <!-- <img src="images/img1.jpg" width="600px" height="500px"/> -->
+        </div>
+      </section>
+      <section class="content-left content-section" id="about">
+        <div class="heading">Regions Covered
+        </div>
+        <div class="content">
+          <div class="left-div">Feeding happiness during the need of the hour for several regions and growing. Providing access to basic food material to the underprivileged has been the goal of our daily work.</div>
+          <div class="right-div"><img src="images/71.jpeg" /></div>
+        </div>
+      </section>
+      <section class="content-right content-section" id="expertise">
+        <div class="heading">
+          No of food packets delivered
+        </div>
+        <div class="content">
+          <div class="left-div"><img src="images/1500.svg" /></div>
+          <div class="right-div">So far we have delivered --- food packets on time to the needy. Finding joy in serving our customers on time keeps us driving forward for better times and to face various challenges that come our way.</div>
+        </div>
+      </section>
+      <section class="content-left content-section" id="journal">
+        <div class="heading">
+         Efficiency
+        </div>
+        <div class="content">
+          <div class="left-div">Being an efficient transporter of food packets is the core of the organization's goals. We have achieved an efficiency of --% and are working forward to make it much better in the coming days.</div>
+          <div class="right-div"><img src="images/86.jpg" /></div>
+        </div>
+      </section>
+      <!-- <section class="content-right content-section" id="interests">
+        <div class="heading">
+          Heading <img src="images/arrow.png" class="arrow" />
+        </div>
+        <div class="content">
+          <div class="left-div"><img src="" /></div>
+          <div class="right-div">Lorem Ipsum</div>
+        </div>
+      </section> -->
+    </main>
+    <footer id="footer">
+      <div class="container">
+        <div class="left-nav">
+          <span class="primary-color">For more info,</span>Contact
+          <!-- <a href=""><img src="images/arrow.png" class="arrow" /></a> -->
+        </div>
+        <!-- <div>
+          <a href=""><img src="images/arrow.png" class="arrow" /></a>
+        </div> -->
+        <div class="image-container">
+          <div>
+            <a href="" target="_blank"
+              ><img src="images/email.png"
+            /></a>
+          </div>
+          <div>
+            <a href="" target="_blank"
+              ><img src="images/instagram.png"
+            /></a>
+          </div>
+          <div>
+            <a href="" target="_blank"
+              ><img src="images/whatsapp.png"
+            /></a>
+          </div>
+          <div>
+            <a
+              href=""
+              target="_blank"
+              ><img src="images/linkedin.png"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="image-container">© 2023 NourishNet. All Rights Reserved.</a></div>
+      <!-- <div class="image-container"><p>Copyright &#169 2023 | Guru Sainath</p></div> -->
+    </footer>
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+      function getsignup() {
+        window.location="signup.html";
+      }
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop == 0 &&
+          document.documentElement.scrollTop == 0
+        ) {
+          document.getElementById("myBtn").classList = "hidden";
+        }
+        if (window.scrollY > 100) {
+          document.getElementById("myBtn").classList = "seen";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        if (window.scrollY > 100) {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+          document.getElementById("top").className = "rotated";
+          setTimeout(function () {
+            document.getElementById("top").className = "rotatedactive";
+            document.getElementById("myBtn").classList += " hidden";
+          }, 500);
+        }
+      }
+    </script>
+    <button id="myBtn" title="Go to top" class="hidden" onclick="topFunction()">
+      <img src="images/arrow.png" id="top" class="" />
+    </button>
+  </body>
+</html>
